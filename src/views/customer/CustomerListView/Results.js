@@ -97,16 +97,16 @@ const Results = ({ className, customers, ...rest }) => {
                   Name
                 </TableCell>
                 <TableCell>
-                  Email
+                  Reference
                 </TableCell>
                 <TableCell>
-                  Location
+                  Client
                 </TableCell>
                 <TableCell>
-                  Phone
+                  Lawyer
                 </TableCell>
                 <TableCell>
-                  Registration date
+                  Filing date
                 </TableCell>
               </TableRow>
             </TableHead>
