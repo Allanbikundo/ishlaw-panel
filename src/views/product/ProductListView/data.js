@@ -20,33 +20,33 @@ export default [
   {
     id: uuid(),
     createdAt: '03/04/2019',
-    description: 'Slack is a cloud-based set of team collaboration tools and services, founded by Stewart Butterfield.',
+    description: 'Criminal law relates to crime and it prescribes conduct perceived as threatening or harmful.',
     media: '/static/images/products/product_3.png',
-    title: 'Slack',
+    title: 'Criminal law',
     totalDownloads: '857'
   },
   {
     id: uuid(),
     createdAt: '04/04/2019',
-    description: 'Lyft is an on-demand transportation company based in San Francisco, California.',
+    description: 'Foreign law refers to practice on national law.',
     media: '/static/images/products/product_4.png',
-    title: 'Lyft',
+    title: 'Foreign law',
     totalDownloads: '406'
   },
   {
     id: uuid(),
     createdAt: '04/04/2019',
-    description: 'GitHub is a web-based hosting service for version control of code using Git.',
+    description: 'Financial law deals with the regulation of the insurance and banking sector.',
     media: '/static/images/products/product_5.png',
-    title: 'GitHub',
+    title: 'Finance law',
     totalDownloads: '835'
   },
   {
     id: uuid(),
     createdAt: '04/04/2019',
-    description: 'Squarespace provides software as a service for website building and hosting. Headquartered in NYC.',
+    description: 'Family law deals with conflicts arising in marriage and civil unions',
     media: '/static/images/products/product_6.png',
-    title: 'Squarespace',
+    title: 'Family law',
     totalDownloads: '835'
   }
 ];

@@ -41,7 +41,7 @@ const data = [
       name: 'Cao Yu'
     },
     createdAt: 1555016400000,
-    status: 'delivered'
+    status: 'cleared'
   },
   {
     id: uuid(),
@@ -51,7 +51,7 @@ const data = [
       name: 'Alexa Richardson'
     },
     createdAt: 1554930000000,
-    status: 'refunded'
+    status: 'cleared'
   },
   {
     id: uuid(),
@@ -71,7 +71,7 @@ const data = [
       name: 'Clarke Gillebert'
     },
     createdAt: 1554670800000,
-    status: 'delivered'
+    status: 'cleared'
   },
   {
     id: uuid(),
@@ -81,7 +81,7 @@ const data = [
       name: 'Adam Denisov'
     },
     createdAt: 1554670800000,
-    status: 'delivered'
+    status: 'cleared'
   }
 ];
 
@@ -101,7 +101,7 @@ const LatestOrders = ({ className, ...rest }) => {
       className={clsx(classes.root, className)}
       {...rest}
     >
-      <CardHeader title="Latest Orders" />
+      <CardHeader title="Latest Matters" />
       <Divider />
       <PerfectScrollbar>
         <Box minWidth={800}>
@@ -109,10 +109,10 @@ const LatestOrders = ({ className, ...rest }) => {
             <TableHead>
               <TableRow>
                 <TableCell>
-                  Order Ref
+                   Reference
                 </TableCell>
                 <TableCell>
-                  Customer
+                  Client
                 </TableCell>
                 <TableCell sortDirection="desc">
                   <Tooltip

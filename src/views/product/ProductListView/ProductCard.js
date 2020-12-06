@@ -1,5 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link as RouterLink, useNavigate } from 'react-router-dom';
+import * as Yup from 'yup';
+import { Formik } from 'formik';
 import clsx from 'clsx';
 import {
   Avatar,
@@ -30,11 +33,15 @@ const useStyles = makeStyles((theme) => ({
 
 const ProductCard = ({ className, product, ...rest }) => {
   const classes = useStyles();
+  const navigate = useNavigate();
 
   return (
     <Card
       className={clsx(classes.root, className)}
       {...rest}
+      onClick={()=>{
+        navigate('/app/dashboard?category=' + product.title, { replace: false })
+      }}
     >
       <CardContent>
         <Box

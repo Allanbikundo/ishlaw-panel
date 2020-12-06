@@ -22,31 +22,31 @@ import ArrowRightIcon from '@material-ui/icons/ArrowRight';
 const data = [
   {
     id: uuid(),
-    name: 'Dropbox',
+    name: 'Litigation',
     imageUrl: '/static/images/products/product_1.png',
     updatedAt: moment().subtract(2, 'hours')
   },
   {
     id: uuid(),
-    name: 'Medium Corporation',
+    name: 'Conveyancing',
     imageUrl: '/static/images/products/product_2.png',
     updatedAt: moment().subtract(2, 'hours')
   },
   {
     id: uuid(),
-    name: 'Slack',
+    name: 'Criminal Law',
     imageUrl: '/static/images/products/product_3.png',
     updatedAt: moment().subtract(3, 'hours')
   },
   {
     id: uuid(),
-    name: 'Lyft',
+    name: 'Foreign Law',
     imageUrl: '/static/images/products/product_4.png',
     updatedAt: moment().subtract(5, 'hours')
   },
   {
     id: uuid(),
-    name: 'GitHub',
+    name: 'Finance Law',
     imageUrl: '/static/images/products/product_5.png',
     updatedAt: moment().subtract(9, 'hours')
   }
@@ -73,7 +73,7 @@ const LatestProducts = ({ className, ...rest }) => {
     >
       <CardHeader
         subtitle={`${products.length} in total`}
-        title="Latest Products"
+        title="Latest File Category Updates"
       />
       <Divider />
       <List>
