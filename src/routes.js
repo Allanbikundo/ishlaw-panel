@@ -11,6 +11,8 @@ import ProductListView from 'src/views/product/ProductListView';
 import RegisterView from 'src/views/auth/RegisterView';
 import SettingsView from 'src/views/settings/SettingsView';
 
+
+import AddFileCategory from 'src/views/FileCategory'
 const routes = [
   {
     path: 'app',
@@ -18,6 +20,7 @@ const routes = [
     children: [
       { path: 'account', element: <AccountView /> },
       { path: 'customers', element: <CustomerListView /> },
+      { path: 'add-file-category', element: <AddFileCategory /> },
       { path: 'dashboard', element: <DashboardView /> },
       { path: 'products', element: <ProductListView /> },
       { path: 'settings', element: <SettingsView /> },

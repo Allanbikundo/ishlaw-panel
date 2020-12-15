@@ -4,6 +4,7 @@ import { createBrowserHistory } from "history";
 import history from "../history";
 
 const baseURL = "https://jimcab.scalum.co.ke/api";
+const fileURL = "http://localhost:3000/files/api/v1"
 const authURL = "https://ishlaw.scalum.co.ke/api/auth/v1";
 export default {
   auth() {
@@ -43,5 +44,17 @@ export default {
     };
   },
 
+  files() {
+    return {
+      createFile: async(payload)=> {
+        try{
+          var response = await axios.post(`${fileURL}/file_categories`,payload)
+          return response
+        }catch (err) {
+          throw err;
+        }
+      }
+    }
+  }
   
 };
